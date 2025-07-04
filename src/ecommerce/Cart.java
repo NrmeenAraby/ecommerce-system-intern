@@ -12,10 +12,10 @@ import java.util.Collections;
 public class Cart {
     private List<CartItem>items=new ArrayList<>();
 
-    void addProduct(Product product, long quantity) throws nonPositiveQuantity,
+    void addProduct(Product product, long quantity) throws NonPositiveQuantityException,
             ExpiredProductException,OutOfStockException{
         if(quantity<=0){
-            throw new nonPositiveQuantity();
+            throw new NonPositiveQuantityException();
         }
         if (product.isExpired()) {
             throw new ExpiredProductException(product.getName());

@@ -36,12 +36,12 @@ public class Main {
             // 4) Checkout
             customer.checkOut();
 
-        } catch (nonPositiveQuantity       |
+        } catch (NonPositiveQuantityException       |
                  ExpiredProductException   |
                  OutOfStockException       |
                  InsufficientBalanceException |
                  CartEmptyException          e) {
-            System.err.println("❌ " + e.getMessage());
+            System.err.println("error" + e.getMessage());
         }
     }
 }
