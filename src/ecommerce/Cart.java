@@ -29,7 +29,6 @@ public class Cart {
                     throw new OutOfStockException(prod.getName(),prod.getQuantity(),totalQuantity);
                 }
                 item.updateQuantity(quantity);
-                System.out.println(quantity + "x " + product.getName() + " added");
                 found=true;
                 break;
             }
