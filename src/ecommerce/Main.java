@@ -34,7 +34,7 @@ public class Main {
             // cart.addProduct(cheese, 100);
 
             // >>>> Uncomment to test negative quantity
-            // cart.addProduct(cheese, -1);
+             cart.addProduct(cheese, -1);
 
             // >>>> Uncomment to test insufficient balance
             // customer = new Customer("user2", "pass", 10.0, cart);
@@ -47,7 +47,7 @@ public class Main {
                  OutOfStockException         |
                  InsufficientBalanceException|
                  CartEmptyException e) {
-            System.err.println("Error: " + e.getMessage());
+            System.err.println("Catch  " + e.getMessage());
         }
     }
 }
